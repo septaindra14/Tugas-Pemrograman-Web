@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- FontAwesome -->
+		<script
+			src="https://kit.fontawesome.com/3d342bf6aa.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Swiper Style -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<!-- Tailwind -->
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<title>I am DwiSepta Indranawasta</title>
+	</head>
+	<body>
+		<!-- Header Start -->
+		<header
+			class="bg-primary-300 absolute top-0 left-0 w-full z-10 px-3 md:px-12 xl:px-28"
+		>
+			<div class="">
+				<div class="flex items-center justify-between py-2 relative">
+					<a
+						href="#home"
+						class="text-lg text-dark font-bold hover:text-secondary-600"
+						>Septa Indra</a
+					>
+					<div class="flex items-center">
+						<button id="hamburger" class="lg:hidden">
+							<span class="hamburger-line origin-top-left"></span>
+							<span class="hamburger-line"></span>
+							<span class="hamburger-line origin-bottom-left"></span>
+						</button>
+
+						<nav
+							id="nav-menu"
+							class="hidden absolute py-5 bg-white shadow-lg rounded-lg right-0 top-full max-w-xs w-full lg:py-0 lg:block lg:static lg:bg-transparent lg:shadow-none lg:max-w-full"
+						>
+							<ul class="block lg:flex">
+								<li class="group">
+									<a
+										href="#home"
+										class="text-base font-medium text-dark py-2 flex mx-8 hover:font-bold"
+										>Home</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#about"
+										class="text-base font-medium text-dark py-2 flex mx-8 hover:font-bold"
+										>About Me</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#portfolio"
+										class="text-base font-medium text-dark py-2 flex mx-8 hover:font-bold"
+										>Portfolio</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#contact"
+										class="text-base font-medium text-dark py-2 flex mx-8 hover:font-bold"
+										>Contact</a
+									>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!-- Hero Section Start -->
+		<section id="home" class="pt-20 xl:pt-32">
+			<div class="container">
+				<div
+					class="grid grid-row-2 items-center md:grid-cols-2 gap-10 md:gap-4 xl:gap-16"
+				>
+					<div class="">
+						<span
+							class="font-firaCode text-lg text-secondary-500 md:text-base xl:text-2xl"
+							>"Hello World!"</span
+						>
+						<h1 class="text-3xl font-bold text-dark xl:text-5xl mt-2">
+							DwiSepta Indranawasta
+						</h1>
+						<h4
+							class="text-lg font-semibold text-[#717378] md:text-base xl:text-2xl"
+						>
+							Website Developer
+						</h4>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+							ipsam mollitia deserunt ex maxime cupiditate molestias eum harum
+							quo maiores.
+						</p>
+						<a href="#contact" class="btn mt-6">
+							<span class="btn-text">Contact Me</span>
+							<i class="fa-solid fa-paper-plane btn-text"></i>
+						</a>
+					</div>
+					<div class="w-full relative row-start-1 md:col-start-2">
+						<img
+							src="./src/img/Foto.png"
+							alt="Septa Indra"
+							class="w-10/12 mx-auto"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Hero Section End -->
+
+		<!-- About Section Start -->
+		<section id="about" class="pt-32 pb-32">
+			<div class="container">
+				<h4 class="section-title">About Me</h4>
+				<div class="grid grid-row-2 md:grid-cols-2 gap-10 md:gap-4 xl:gap-16">
+					<div>
+						<h2 class="title">Interset in Website Development</h2>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+							deserunt vel libero ratione, sint nulla reiciendis fuga veritatis
+							autem cupiditate?
+						</p>
+					</div>
+					<div>
+						<h2 class="title">Let's Connect</h2>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+							maiores!
+						</p>
+						<div class="flex items-center gap-3 mt-3">
+							<!-- Github -->
+							<a
+								href="https://github.com/septaindra14"
+								target="_blank"
+								class="icon-bg"
+							>
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About Section End -->
+
+		<!-- Portfolio Section Start -->
+		<section id="portfolio" class="pt-16 pb-24">
+			<div class="container">
+				<div class="text-center">
+					<h4 class="section-title">Portfolio</h4>
+					<h2 class="title">Most Recent Works</h2>
+					<p id="ch"></p>
+				</div>
+				<div id="portfolio-swiper" class="swiper flex flex-col">
+					<div class="swiper-wrapper py-8">
+						<div class="swiper-slide">
+							<a
+							>
+								<div class="bg-dark">
+									<img
+										src="./src/img/web-calculator.png"
+										alt=""
+										class="bg-dark mx-auto h-40"
+									/>
+								</div>
+								<div class="p-4 h-full">
+									<h5 class="text-lg whitespace-nowrap overflow-auto">
+										Web Calculator
+									</h5>
+									<p class="paragraph mt-2 max-h-24 overflow-auto">
+										Project ini merupakan program kalkulator sederhana yang
+										dibangun menggunakan HTML dan CSS serta Javascript untuk
+										melakukan perhitungan matematik.
+									</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="swiper-slide">
+							<a
+							>
+								<div class="bg-dark">
+									<img
+										src="./src/img/Gamepuzz.jpg"
+										alt=""
+										class="bg-dark mx-auto h-40"
+									/>
+								</div>
+								<div class="p-4 h-full">
+									<h5 class="text-lg whitespace-nowrap overflow-auto">
+										Tugas Besar
+									</h5>
+									<p class="paragraph mt-2 max-h-24 overflow-auto">
+										Project ini merupakan Tugas Besar yang diberikan
+										kepada kelompok untuk membuat game bertema sejarah
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<i
+						id="prev"
+						class="fa-solid fa-angle-left absolute top-[50%] -translate-y-1/2 left-0 text-3xl text-secondary-500 xl:text-5xl z-10"
+					></i>
+					<i
+						id="next"
+						class="fa-solid fa-angle-right absolute top-[50%] -translate-y-1/2 right-0 text-3xl text-secondary-500 xl:text-5xl z-10"
+					></i>
+				</div>
+				<div id="swiper-pagination" class="swiper-pagination relative"></div>
+			</div>
+		</section>
+		<!-- Portfolio Section End -->
+
+		<!-- Contact Section Start -->
+		<section id="contact" class="pt-16 pb-32">
+			<div class="container">
+				<div class="text-center">
+					<h4 class="section-title">Contact</h4>
+					<h2 class="title">Let's Get in Touch</h2>
+					<p id="ch"></p>
+				</div>
+				<div class="flex flex-col items-center gap-8 xl:px-32">
+					<input type="text" id="name" name="name" placeholder="Name" />
+					<input type="email" id="email" name="email" placeholder="Email" />
+					<textarea
+						name="message"
+						id="message"
+						class="h-44"
+						placeholder="Message"
+					></textarea>
+					<button class="btn btn-text">
+						Send Message<i class="fa-solid fa-paper-plane btn-items"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- Contact Section End -->
+
+		<!-- Footer Start -->
+		<footer class="py-16 bg-[#4C4637]">
+			<div
+				class="w-full px-4 flex flex-col gap-8 text-light lg:flex-row lg:px-16 xl:px-32"
+			>
+				<div class="w-full">
+					<h4 class="text-2xl font-bold mb-2">DwiSepta Indranawasta</h4>
+					<h6 class="text-base font-semibold">
+						Jl. Progo No.16, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115
+					</h6>
+					<h6 class="text-base font-semibold">Bandung</h6>
+				</div>
+				<div class="w-full">
+					<h4 class="text-2xl font-bold mb-2">Section</h4>
+					<div class="flex flex-col gap-2 text-base font-semibold">
+						<a href="#about">About</a>
+						<a href="#portfolio">Portfolio</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+				<div class="w-full">
+					<h4 class="text-2xl font-bold mb-2">Social Media</h4>
+					<div class="flex gap-4">
+						<a href="https://github.com/septaindra14" target="_blank">
+							<i
+								class="fa-brands fa-github text-2xl hover:text-secondary-500"
+							></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer End -->
+
+		<!-- Swiper Script -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<script src="./src/js/script.js"></script>
+	</body>
+</html>
